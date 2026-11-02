@@ -6,5 +6,9 @@ export function shuffleItems<T>(items: readonly T[]): T[] {
     [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
   }
 
+  if (shuffled.length > 1 && shuffled.every((item, index) => item === items[index])) {
+    [shuffled[0], shuffled[1]] = [shuffled[1], shuffled[0]];
+  }
+
   return shuffled;
 }

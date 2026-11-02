@@ -14,7 +14,6 @@ export default function App() {
   const [activeTopic, setActiveTopic] = useState<Topic | "Lahat ng Paksa">('Lahat ng Paksa');
   
   const [shuffle, setShuffle] = useState(true);
-  const [sound, setSound] = useState(true);
   
   const [currentIndex, setCurrentIndex] = useState(0);
   const [streak, setStreak] = useState(0);
@@ -39,7 +38,7 @@ export default function App() {
     setScore(0);
     setStreak(0);
     setTotalAnswered(0);
-  }, [activeTopic, activeTab]);
+  }, [activeTopic, activeTab, shuffle]);
 
   const handleAnswer = (isCorrect: boolean) => {
     setTotalAnswered(prev => prev + 1);
@@ -68,13 +67,15 @@ export default function App() {
             activeTopic={activeTopic}
             currentIndex={currentIndex}
             setCurrentIndex={setCurrentIndex}
-            onAnswer={handleAnswer} shuffle={false}          />
+            onAnswer={handleAnswer}
+            shuffle={shuffle}
+          />
         );
-      case 'identification': return <Identification shuffle={false} />;
-      case 'matching': return <MatchingType shuffle={false} />;
-      case 'enumeration': return <Enumeration shuffle={false} />;
-      case 'flashcards': return <FlashcardDeck shuffle={false} />;
-      case 'recitation': return <Recitation shuffle={false} />;
+      case 'identification': return <Identification shuffle={shuffle} />;
+      case 'matching': return <MatchingType shuffle={shuffle} />;
+      case 'enumeration': return <Enumeration shuffle={shuffle} />;
+      case 'flashcards': return <FlashcardDeck shuffle={shuffle} />;
+      case 'recitation': return <Recitation shuffle={shuffle} />;
     }
   };
 
@@ -98,16 +99,11 @@ export default function App() {
 
         <div className="flex items-center gap-4 font-medium">
           <button 
-            onClick={() => setShuffle(!shuffle)}
+            onClick={() => setShuffle(enabled => !enabled)}
+            aria-pressed={shuffle}
             className={`px-3 py-1 rounded-lg transition-colors ${shuffle ? 'bg-blue-100 text-blue-700' : 'bg-gray-200 text-gray-600'}`}
           >
             🔀 Shuffle: {shuffle ? 'Bukas' : 'Sarado'}
-          </button>
-          <button 
-            onClick={() => setSound(!sound)}
-            className={`px-3 py-1 rounded-lg transition-colors ${sound ? 'bg-green-100 text-green-700' : 'bg-gray-200 text-gray-600'}`}
-          >
-            🔊 Sound: {sound ? 'Bukas' : 'Sarado'}
           </button>
         </div>
       </div>
