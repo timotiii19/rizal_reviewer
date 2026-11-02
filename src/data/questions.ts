@@ -1,17 +1,9 @@
 export type Topic = 
   | "Lahat ng Paksa"
-  | "Ateneo Municipal"
-  | "Kapanganakan at Pamilya"
-  | "Mga Pag-ibig ni Rizal"
-  | "Noli Me Tangere"
-  | "Pag-aaral sa Biñan"
-  | "Pagbabalik sa Calamba (1887)"
-  | "Paglalakbay sa Asya at Amerika"
-  | "Pamantasan ng Santo Tomas"
-  | "Unang Paglalakbay sa Europa"
-  | "Pangalawang Paglalakbay sa Europa"
   | "El Filibusterismo"
   | "Mga Sanaysay at Anotasyon"
+  | "Paglalakbay sa Asya at Amerika"
+  | "Pangalawang Paglalakbay sa Europa"
   | "Dapitan at Huling Araw"
   | "Talahulugan at Terminolohiya";
 
@@ -40,7 +32,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang pamagat ng babasahing natagpuan diumano sa punda ng unan ni Lucia na ginamit na dahilan upang dakpin at ikulong si Rizal sa Fort Santiago?",
     options: ["Verdades Nuevas", "Makamisa", "Pobres Frailes", "Ingratitudes"],
     answer: "Pobres Frailes",
-    explanation: "Ang Pobres Frailes (Mga Kaawa-awang Prayle) ay isang mapanuyang babasahin laban sa mga Dominiko na idinahilan ng mga Espanyol upang dakpin si Rizal."
+    explanation: "Ang Pobres Frailes (Mga Kaawa-awang Prayle) ay idinahilan ng mga Espanyol upang dakpin si Rizal dahil ito ay laban sa mga Dominiko."
   },
   {
     id: 3,
@@ -64,7 +56,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang pamagat ng hindi natapos na ikatlong nobela ni Rizal na nakasulat sa Tagalog na inilalarawan ang kultura sa bayan ng Tulig?",
     options: ["Sa Aking Mga Kabata", "Kundiman", "Makamisa", "Mi Retiro"],
     answer: "Makamisa",
-    explanation: "Ang Makamisa ay ang hindi natapos na nobela ni Rizal na pumupuna sa mga kaugaliang panrelihiyon nang walang sapat na pag-unawa."
+    explanation: "Ang Makamisa ay hindi natapos na nobela ni Rizal na pumupuna sa mga kaugaliang panrelihiyon nang walang sapat na pag-unawa."
   },
   {
     id: 6,
@@ -88,7 +80,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino ang Gobernador-Militar ng Dapitan na naging unang tagabantay ni Rizal at pinaghandugan niya ng isang tula noong Agosto 26, 1892?",
     options: ["Kapitan Delgras", "Kapitan Rafael Dominguez", "Ricardo Carnicero", "Eulogio Despujol"],
     answer: "Ricardo Carnicero",
-    explanation: "Si Ricardo Carnicero ang kanyang naging tagabantay at kaibigan na pinaghandugan niya ng tulang 'Kay Don Ricardo Carnicero'."
+    explanation: "Si Ricardo Carnicero ang kanyang naging tagabantay at pinaghandugan niya ng tulang 'Kay Don Ricardo Carnicero'."
   },
   {
     id: 9,
@@ -144,7 +136,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Anong gamit ang ibinigay ni Rizal sa kanyang kapatid na si Trinidad na naglalaman pala ng nakatuping papel ng kanyang huling tula?",
     options: ["Isang aklat dasalan", "Kusinilya de alkohol", "Kuwintas ng rosaryo", "Isang kahoy na baticuling"],
     answer: "Kusinilya de alkohol",
-    explanation: "Sa loob ng kusinilyang ito itinago ang 'Mi Ultimo Adios'."
+    explanation: "Sa loob ng kusinilyang ito itinago ang nakatuping papel ng tulang nakilala bilang 'Mi Ultimo Adios'."
   },
   {
     id: 16,
@@ -176,7 +168,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang huling salitang binigkas ni Rizal bago siya bumagsak sa Bagumbayan na hango sa mga huling salita ni Hesus?",
     options: ["Viva España!", "Morir es descansar!", "Consummatum est!", "Adios, Patria Adorada!"],
     answer: "Consummatum est!",
-    explanation: "Ito ay nangangahulugang 'Tapos na' o 'It is done'."
+    explanation: "Ito ay nangangahulugang 'It is done' o 'Natapos na'."
   },
   {
     id: 20,
@@ -184,7 +176,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Saan lihim na inilibing ang bangkay ni Rizal nang walang kabaong at seremonya pagkatapos ng kanyang eksekusyon?",
     options: ["Sementeryo ng Paco", "Sementeryo ng Binondo", "Katedral ng Maynila", "Bagumbayan"],
     answer: "Sementeryo ng Paco",
-    explanation: "Lihim siyang inilibing dito upang hindi madiskubre ng mga Pilipino at gawing propaganda ang kanyang libingan."
+    explanation: "Lihim siyang inilibing dito upang hindi madiskubre ng mga Pilipino at gamitin ang kanyang bangkay bilang propaganda."
   },
   {
     id: 21,
@@ -192,7 +184,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang ipinaukit ni Narcisa sa lapida na inilagay sa puntod ni Rizal upang hindi ito makilala at mailipat ng mga Espanyol?",
     options: ["J.P.R.", "R.P.J.", "Dimas Alang", "Laong Laan"],
     answer: "R.P.J.",
-    explanation: "Ito ang binaliktad na inisyal ni Rizal (Rizal, Protacio, Jose)."
+    explanation: "Ito ay ang mga unang titik ng pangalan ng bayani na nakaukit na pabaliktad upang hindi makilala at mailipat muli ang himlayan."
   },
   {
     id: 22,
@@ -200,7 +192,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Kaninong alaala inihandog ni Dr. Jose Rizal ang nobelang El Filibusterismo?",
     options: ["Sa mga magsasaka ng Calamba", "Kay Leonor Rivera", "Sa tatlong paring martir (GOMBURZA)", "Sa kanyang amang si Francisco Mercado"],
     answer: "Sa tatlong paring martir (GOMBURZA)",
-    explanation: "Inihandog niya ito kina Gomez, Burgos, at Zamora na naging biktima ng kawalang-katarungan noong 1872."
+    explanation: "Inihandog ni Rizal ang kanyang ikalawang nobela sa alaala ng tatlong paring martir na binitay sa Bagumbayan."
   },
   {
     id: 23,
@@ -208,7 +200,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino ang pinakamatanda sa tatlong paring martir (85 o 72 taong gulang) na naging kura paroko ng Bacoor, Cavite?",
     options: ["Padre Jose Burgos", "Padre Jacinto Zamora", "Padre Pedro Pelaez", "Padre Mariano Gomez"],
     answer: "Padre Mariano Gomez",
-    explanation: "Ayon sa mga rekord, si Padre Gomez ang pinakamatanda sa kanila."
+    explanation: "Ayon sa ulat, si Padre Mariano Gomez ang pinakamatanda sa tatlong paring binitay sa Bagumbayan."
   },
   {
     id: 24,
@@ -216,7 +208,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino ang Gobernador-Heneral na nagpadala ng 50 sundalo upang sunugin ang mga bahay at palayasin ang pamilya ni Rizal sa Calamba?",
     options: ["Valeriano Weyler", "Eulogio Despujol", "Emilio Terrero", "Ramon Blanco"],
     answer: "Valeriano Weyler",
-    explanation: "Si Weyler, na kilalang malupit at kampi sa mga prayle, ang nag-utos ng pamamaslang at pagpapalayas sa mga magsasaka."
+    explanation: "Si Valeriano Weyler ay naging kilalang malupit na nag-utos na walang-awang sunugin ang mga bahay at palayasin ang pamilya ni Rizal."
   },
   {
     id: 25,
@@ -224,7 +216,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Saang lungsod sa Pransiya ganap na tinapos ni Rizal ang buong manuskrito ng El Filibusterismo noong Marso 29, 1891?",
     options: ["Paris", "Marseilles", "Biarritz", "Madrid"],
     answer: "Biarritz",
-    explanation: "Natapos niya ang manuskrito bago siya lumipat sa Belgica upang ipalimbag ito."
+    explanation: "Sa lugar na ito ganap na tinapos ni Rizal ang buong manuskrito ng nobela bago ipalimbag."
   },
   {
     id: 26,
@@ -232,7 +224,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Bakit napilitan si Rizal na ilipat ang pagpapalimbag ng El Filibusterismo sa Genta (Ghent), Belgica?",
     options: ["Dahil mas mabilis ang mga imprenta doon", "Dahil mas mababa ang halaga at upang makaiwas kay Petite Suzanne", "Dahil nandoon ang pondo mula sa Kilusang Propaganda", "Dahil pinagbawalan siyang maglimbag sa Paris"],
     answer: "Dahil mas mababa ang halaga at upang makaiwas kay Petite Suzanne",
-    explanation: "Pinili niya ang Ghent dahil mas mura ang imprenta, na siyang kailangan niya sa matinding kakapusan ng kanyang pondo."
+    explanation: "Pangunahing dahilan ay upang makatipid dahil sa mababang halaga ng imprenta, at upang umiwas na rin sa atensyon ni Petite Suzanne."
   },
   {
     id: 27,
@@ -240,7 +232,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino ang nakasama ni Rizal sa inuupahang kwarto sa Genta na kahati niya sa rasyon ng biskwit upang makatipid?",
     options: ["Edilberto Evangelista", "Jose Alejandro", "Valentin Ventura", "Jose Ma. Basa"],
     answer: "Jose Alejandro",
-    explanation: "Si Jose Alejandro ay mag-aaral ng inhenyeriya na nakasama niya sa Ghent, na umubos agad ng kanyang rasyon, taliwas sa pagtitipid ni Rizal."
+    explanation: "Kasama niya si Jose Alejandro na mabilis umubos ng kanyang rasyon ng biskwit."
   },
   {
     id: 28,
@@ -248,7 +240,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino ang kaibigan na nagpadala ng pondo upang matuloy ang naudlot na pagpapalimbag ng nobela noong Agosto 1891?",
     options: ["Valentin Ventura", "Ferdinand Blumentritt", "Maximo Viola", "Graciano Lopez Jaena"],
     answer: "Valentin Ventura",
-    explanation: "Ang pondong ipinadala ni Valentin Ventura ang nagligtas sa pagpapalimbag ng El Filibusterismo."
+    explanation: "Naging tagapagligtas ng El Filibusterismo si Valentin Ventura sa pamamagitan ng pagpapadala ng kinakailangang pondo."
   },
   {
     id: 29,
@@ -256,7 +248,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Bunsod ng matinding kakulangan sa pondo, mula sa orihinal na 44 na kabanata, ilan na lamang ang natira sa nailimbag na El Filibusterismo?",
     options: ["35", "37", "39", "41"],
     answer: "39",
-    explanation: "Kinailangan niyang tanggalin ang ilang bahagi upang pagkasyahin ang kanyang pera."
+    explanation: "Napilitan siyang magkaltas ng kabanata hanggang sa umabot na lamang sa 39 na kabanata."
   },
   {
     id: 30,
@@ -264,7 +256,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang tawag o bansag kay Simoun sa nobela dahil sa kanyang lihim na kapangyarihan at impluwensya bilang tagapayo ng Gobernador Heneral?",
     options: ["Kardenal Moreno", "Eminencia Negro", "Ang Filibustero", "Ibarra"],
     answer: "Eminencia Negro",
-    explanation: "Tinagurian siyang Eminencia Negro dahil siya ang nakakubling kapangyarihan sa likod ng pamahalaan."
+    explanation: "Tinawag siyang 'Eminencia Negro' dahil ginamit niya ang kanyang salapi upang maging matalik na tagapayo ng Gobernador Heneral sa likod ng kapangyarihan nito."
   },
   {
     id: 31,
@@ -272,7 +264,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sa aling lugar nagdaos ng pagtitipon ang mga mag-aaral upang tuligsain ang mga prayle matapos ibasura ang akademya ng wikang Kastila?",
     options: ["Sa Bapor Tabo", "Sa Kumbento ng Santa Clara", "Sa Panciteria ni Quiroga", "Sa Bahay ni Makaraig"],
     answer: "Sa Panciteria ni Quiroga",
-    explanation: "Dito idinaos ng mga mag-aaral ang patuyang piging dahil sa pagkabasura sa kanilang hiling na Akademya."
+    explanation: "Dito nagdaos ng pagtitipon ang mga mag-aaral upang tahasang magtalumpati at tuligsain ang mga prayle."
   },
   {
     id: 32,
@@ -280,7 +272,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino ang tauhan na umagaw sa lamparang may nitro-gliserina at nagtapon nito sa ilog upang iligtas si Paulita Gomez?",
     options: ["Basilio", "Isagani", "Kabesang Tales", "Padre Florentino"],
     answer: "Isagani",
-    explanation: "Ang labis na pagmamahal ni Isagani kay Paulita ang sumira sa planong pagpapasabog ni Simoun."
+    explanation: "Dahil sa kanyang damdamin, inagaw niya ang lampara upang iligtas ang buhay ng minamahal na si Paulita."
   },
   {
     id: 33,
@@ -288,15 +280,15 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ayon sa paghahambing ng dalawang nobela, kung ang Noli Me Tangere ay isang 'Nobelang Romantiko', ano naman ang El Filibusterismo?",
     options: ["Nobelang Sosyolohikal", "Nobelang Historikal", "Nobelang Politikal", "Nobelang Kultural"],
     answer: "Nobelang Politikal",
-    explanation: "Itinuturing itong 'Aklat ng Isip' at Nobelang Politikal dahil sadyang naglalayon itong gisingin ang bayan para mag-alsa."
+    explanation: "Itinuturing ang Fili bilang Nobelang Politikal o aklat ng isip na nagsilbing lunas na naghahanap ng agarang solusyon sa pamamagitan ng pag-aaklas."
   },
   {
     id: 34,
     topic: "Paglalakbay sa Asya at Amerika",
-    question: "Sino ang kaibigang manggagamot na Portuges na tumulong kay Rizal upang maging matagumpay na optalmologo sa Hong Kong?",
+    question: "Sino ang kaibigang manggagamot na tumulong kay Rizal upang maging matagumpay na optalmologo sa Hong Kong?",
     options: ["Dr. Ariston Bautista Lin", "Dr. Reinhold Rost", "Dr. Lorenzo P. Marques", "Dr. Felipe Ruiz Castro"],
     answer: "Dr. Lorenzo P. Marques",
-    explanation: "Siya ay nagpasa ng maraming pasyente kay Rizal dahil sa tiwala nito sa kakayahan ng bayani."
+    explanation: "Ipinasa ni Dr. Lorenzo P. Marques ang maraming pasyenteng may sakit sa mata kay Rizal dahil sa mataas na pagtingin nito sa kakayahan ng bayani."
   },
   {
     id: 35,
@@ -304,17 +296,17 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Saang kalye sa Hong Kong matatagpuan ang klinika na binuksan ni Rizal upang kumita para sa kanyang sarili at pamilya?",
     options: ["Blg. 5 Kalye D' Aguilar", "Blg. 2 Rednaxela Terrace", "Rue Maubeuge", "Blg. 45 Kalye Ylaya"],
     answer: "Blg. 2 Rednaxela Terrace",
-    explanation: "Sa Rednaxela Terrace siya nagbukas ng klinika at naging matagumpay bilang espesyalista sa mata."
+    explanation: "Nagbukas siya ng sariling klinika sa Blg. 2 Rednaxela Terrace matapos tulungan ng kanyang mga kaibigan."
   },
 
-  // --- BATCH 2 (36-70 originally labeled 1-35) ---
+  // --- BATCH 2 (36-70) ---
   {
     id: 36,
     topic: "Paglalakbay sa Asya at Amerika",
     question: "Anong epidemya ang tumama sa Hong Kong kung saan buong-husay na ginamot ni Rizal ang kanyang sariling pamilya at mga pasyente?",
     options: ["Kolera", "Bulutong (Smallpox)", "Trangkaso", "Tuberkulosis"],
     answer: "Trangkaso",
-    explanation: "Tumama ang influenza epidemya at hindi nag-atubiling gampanan ni Rizal ang tungkulin bilang manggagamot sa kanyang pamilya at bayan."
+    explanation: "Tumama ang epidemya ng trangkaso, na naging dahilan upang alagaan niya pati na ang kanyang nahawang ina, bayaw, at kapatid."
   },
   {
     id: 37,
@@ -322,15 +314,15 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Anong barko ang sinakyan ni Rizal mula New York patungong Liverpool, kung saan pinahanga niya ang mga pasahero sa paggamit ng yo-yo?",
     options: ["SS City of Rome", "S.S. Melbourne", "Bapor Don Juan", "Isla de Panay"],
     answer: "SS City of Rome",
-    explanation: "Ginulat niya ang mga dayuhang pasahero sa pamamagitan ng paggamit ng yo-yo bilang isang sandata at laruan."
+    explanation: "Lulan ng barkong ito, pinahanga niya ang mga kapwa pasahero sa kanyang galing sa paggamit ng yo-yo."
   },
   {
     id: 38,
     topic: "Pangalawang Paglalakbay sa Europa",
     question: "Sino ang panganay na anak ng pamilyang Ingles na tinuluyan ni Rizal sa London na nahulog ang damdamin sa kanya?",
-    options: ["Blanche Beckett", "Florence Beckett", "Grace Beckett", "Gertrude Beckett"],
-    answer: "Gertrude Beckett",
-    explanation: "Si Gertrude 'Tottie' Beckett ay tuluyang na-inlove kay Rizal habang siya ay nangungupahan sa kanilang bahay."
+    options: ["Blanche Becket", "Florence Becket", "Grace Becket", "Gertrude Becket"],
+    answer: "Gertrude Becket",
+    explanation: "Si Gertrude Becket ay 18-taong gulang na umibig kay Rizal, bago pinili ng bayani na umiwas."
   },
   {
     id: 39,
@@ -338,7 +330,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino ang orihinal na may-akda ng aklat na 'Sucesos de las Islas Filipinas' (1609) na nilagyan ni Rizal ng sariling anotasyon?",
     options: ["Pedro Chirino", "Antonio de Morga", "Francisco Colin", "Salvador Font"],
     answer: "Antonio de Morga",
-    explanation: "Ang aklat na ito ay naglalarawan ng unang bahagi ng kasaysayan na isinulat ng isang opisyal, kaya naging obhetibo ang pananaw nito."
+    explanation: "Si Antonio de Morga ay isang Kastilang opisyal na nakasaksi mismo sa mga pangyayari, na siyang nilagyan ng anotasyon ni Rizal."
   },
   {
     id: 40,
@@ -346,7 +338,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Alin sa mga sumusunod ang HINDI kabilang sa mga dahilan kung bakit napili ni Rizal ang aklat ni Morga para lagyan ng anotasyon?",
     options: ["Dahil bihira itong matagpuan", "Dahil sekular at obhetibo ang pananaw ni Morga bilang hindi pari", "Dahil si Morga mismo ang nakasaksi sa mga pangyayari", "Dahil si Morga ay isang Pilipinong manunulat bago dumating ang Kastila"],
     answer: "Dahil si Morga ay isang Pilipinong manunulat bago dumating ang Kastila",
-    explanation: "Si Morga ay Kastila, hindi Pilipino. Ang ibang tatlo ay totoo."
+    explanation: "Si Morga ay hindi Pilipino; isa siyang Kastilang Kapitan Heneral at hukom ng Audiencia."
   },
   {
     id: 41,
@@ -354,7 +346,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang binalak itatag ni Rizal sa Paris noong Agosto 1889 na layuning pag-aralan ang Pilipinas mula sa siyentipiko at pangkasaysayang pananaw?",
     options: ["La Liga Filipina", "Asosasyong Internasyonal ng mga Filipinohista", "Sociedad de Agricultores", "Hermandad de la Paz y Caridad"],
     answer: "Asosasyong Internasyonal ng mga Filipinohista",
-    explanation: "Nais niyang itaas ang pag-aaral tungkol sa kasaysayan ng Pilipinas kasama ang mga internasyonal na iskolar."
+    explanation: "Layunin ng asosasyong ito na mapag-aralan ang Pilipinas at naging pangulo nito si Dr. Ferdinand Blumentritt."
   },
   {
     id: 42,
@@ -362,15 +354,15 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Anong sanaysay ang isinulat ni Rizal bilang direktang tugon sa babala ni Gobernador-Heneral Weyler laban sa 'mga anak na walang turing'?",
     options: ["Verdades Nuevas", "Diferencias", "Ingratitudes (Mga Kawalang Turing)", "Sobre la Indolencia de los Filipinos"],
     answer: "Ingratitudes (Mga Kawalang Turing)",
-    explanation: "Ito ang tahasang sagot ni Rizal sa mga insulto ni Weyler, na nagpapaliwanag na ang pamumuna sa gobyerno ay hindi kawalang utang-na-loob."
+    explanation: "Sa pamamagitan ng satirikal na tono, ipinagtanggol niya na ang pagpuna sa gobyerno ay hindi kawalang turing kundi pagmamahal sa bayan."
   },
   {
     id: 43,
     topic: "Mga Sanaysay at Anotasyon",
-    question: "Sa sanaysay ukol sa 'Mga Kawalang Turing', sinong bayaw ni Rizal ang sapilitang ipinatapon sa Bohol gamit ang administratibong deportasyon nang walang tamang paglilitis?",
+    question: "Sa sanaysay ukol sa 'Mga Kawalang Turing', sino ang bayaw ni Rizal ang sapilitang ipinatapon sa Bohol gamit ang administratibong deportasyon nang walang tamang paglilitis?",
     options: ["Paciano Rizal", "Manuel Hidalgo", "Silvestre Ubaldo", "Mariano Herbosa"],
     answer: "Manuel Hidalgo",
-    explanation: "Ang panunupil kay Hidalgo ay isa sa mga kalupitang iginiit ni Rizal upang labanan ang maling katarungan."
+    explanation: "Ipinatapon ang kanyang bayaw na si Manuel Hidalgo sa Bohol gamit ang administratibong deportasyon nang walang tamang proseso sa batas."
   },
   {
     id: 44,
@@ -378,7 +370,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sa artikulong 'Ang Katotohanan Para sa Lahat', ipinaliwanag ni Rizal na may dalawang pangkat sa bawat bayan. Sino ang palaging pinapaboran ng mga kura?",
     options: ["Ang mga may pinag-aralan at naghahangad ng katarungan", "Ang mga dayuhang mangangalakal", "Ang mga tahimik na mamamayan na walang kinakampihan", "Ang mga sunud-sunuran na mas madaling kontrolin at hikayatin"],
     answer: "Ang mga sunud-sunuran na mas madaling kontrolin at hikayatin",
-    explanation: "Pinapaboran ang mga mangmang at sunud-sunuran upang hindi kwestiyunin ang kapangyarihan ng mga prayle."
+    explanation: "Ang mga sunud-sunuran ay mas pinapaboran dahil mas madali silang utusan at gamitin ng mga prayle sa kanilang mga balak."
   },
   {
     id: 45,
@@ -386,15 +378,15 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Anong artikulo ang inilathala ni Rizal sa La Solidaridad noong Hulyo 31, 1889 bilang tugon kay Vicente Belloc y Sanchez?",
     options: ["Verdades Viejas", "Verdades Nuevas (Mga Bagong Katotohanan)", "Por Telefono", "Diferencias"],
     answer: "Verdades Nuevas (Mga Bagong Katotohanan)",
-    explanation: "Ito ang sanaysay kung saan iginiit niya na likas na palpak ang sistemang kolonyal na umaasa lang sa mga prayle."
+    explanation: "Sa sanaysay na ito, kinuwestiyon ni Rizal ang pahayag na masisira ng mga reporma ang isang payapang pamahalaan."
   },
   {
     id: 46,
     topic: "Mga Sanaysay at Anotasyon",
-    question: "Sa kanyang sanaysay na 'Mga Bagong Katotohanan', sinong mga naunang misyonero ang ginamit ni Rizal na batayan upang patunayang may mataas na sibilisasyon at sariling sistema ng pagsulat (Baybayin) ang mga Pilipino bago dumating ang Espanyol?",
+    question: "Sa kanyang sanaysay na 'Mga Bagong Katotohanan', sinong mga naunang misyonero ang ginamit ni Rizal na batayan upang patunayang may mataas na sibilisasyon at sariling sistema ng pagsulat ang mga Pilipino bago dumating ang Espanyol?",
     options: ["P. Chirino at P. Colin", "P. Font at P. Salvi", "P. Burgos at P. Zamora", "P. Balaguer at P. March"],
     answer: "P. Chirino at P. Colin",
-    explanation: "Ginawa niyang batayan ang mga unang tala upang patunayan na ang mga Pilipino ay hindi mga 'taong-gubat'."
+    explanation: "Ang mga tala nina P. Chirino at P. Colin ang nagpatunay na ang mga Pilipino ay may sariling sibilisasyon at hindi mga 'taong gubat'."
   },
   {
     id: 47,
@@ -402,7 +394,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang pamagat ng maikling satirikong polyeto na inilathala ni Rizal sa Barcelona noong 1889 upang tuyain si Fr. Salvador Font?",
     options: ["Makamisa", "Por Telefono", "Pobres Frailes", "La Politica Colonial en Filipinas"],
     answer: "Por Telefono",
-    explanation: "Ginamit niya ang imbensyon ng telepono upang pagtawanan ang kasakiman at kamangmangan ng mga prayle."
+    explanation: "Inilalarawan sa akdang ito ang isang nakakatawang pag-uusap sa telepono upang tuyain ang pagkukunwari ng mga prayle."
   },
   {
     id: 48,
@@ -410,7 +402,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Ano ang sagisag-panulat (pen name) na ginamit ni Rizal nang ilathala niya ang satirikong akdang 'Por Telefono'?",
     options: ["Laong Laan", "Plaridel", "Dimas Alang", "Agapito Bagumbayan"],
     answer: "Dimas Alang",
-    explanation: "Nailimbag ito sa ilalim ng sagisag-panulat na Dimas Alang sa tulong ni Mariano Ponce."
+    explanation: "Ang polyetong ito ay nailimbag sa Barcelona sa ilalim ng kanyang sagisag-panulat na 'Dimas Alang'."
   },
   {
     id: 49,
@@ -418,7 +410,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Anong pahayagan sa Madrid ang naglathala ng 'Verdades Viejas' (Mga Lumang Katotohanan) at nagsilbing pangunahing boses ng mga konserbatibong Espanyol laban sa mga repormista?",
     options: ["La Patria", "La Independencia", "La Publicidad", "El Heraldo de Madrid"],
     answer: "La Patria",
-    explanation: "Ito ang konserbatibong pahayagang tinuligsa ni Rizal gamit ang 'Mga Bagong Katotohanan'."
+    explanation: "Ang La Patria ang pahayagang naglabas ng sulat na nagsasabing sisira sa mapayapang pamamahala ang pagbibigay ng reporma."
   },
   {
     id: 50,
@@ -426,7 +418,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sa sanaysay na 'Diferencias' (Mga Pagkakaiba), anong terminong Latin ang ginamit ni Rizal sa kaukulang palayon upang itama ang maling gramatika ng mga manunulat ng La Patria na nagpilit isulat ito bilang 'estatu'?",
     options: ["Consummatum est", "Status quo", "Unus instar omnium", "Verdades viejas"],
     answer: "Status quo",
-    explanation: "Ginamit niya ang salitang ito upang ipakita na mas matalas pa ang kanyang gramatika kaysa sa mga kritiko mula sa Espanya."
+    explanation: "Ipinaliwanag ni Rizal na ang salitang 'status' ay kanyang ginamit bilang 'ablativo' sa gramatika, taliwas sa kamangmangan ng kanyang mga kritiko."
   },
   {
     id: 51,
@@ -455,10 +447,10 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
   {
     id: 54,
     topic: "Dapitan at Huling Araw",
-    question: "Sino ang may-ari ng bahay sa Kalye Ylaya, Tondo kung saan pormal na itinatag ang La Liga Filipina?",
-    options: ["Deodato Arellano", "Apolinario Mabini", "Doroteo Ongjunco", "Domingo Franco"],
-    answer: "Doroteo Ongjunco",
-    explanation: "Isang mestisong Pilipino-Tsino ang nagbigay-daan upang gamitin ang kanyang tahanan sa makasaysayang pagpupulong na ito."
+    question: "Sino sa mga sumusunod ang dumalo sa pagtitipon ng La Liga Filipina na kilala bilang isang mason at dentista?",
+    options: ["Bonifacio Arevalo", "Deodato Arellano", "Domingo Franco", "Pedro Serrano Laktaw"],
+    answer: "Bonifacio Arevalo",
+    explanation: "Si Bonifacio Arevalo (Harem) ay isang mason at dentista na dumalo sa bahay ni Ongjunco."
   },
   {
     id: 55,
@@ -506,7 +498,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Anong kooperatiba ang itinatag ni Rizal noong 1895 upang mapaunlad ang produktong pang-agrikultura at matulungan ang mga magsasaka sa Dapitan?",
     options: ["La Liga Filipina", "Sociedad de Agricultores Dapitanos", "Hermandad de la Paz y Caridad", "Asosasyong Internasyonal ng mga Filipinohista"],
     answer: "Sociedad de Agricultores Dapitanos",
-    explanation: "Nilalayon nitong alisin ang monopolyo ng mga dayuhan at pagandahin ang kita ng mga magsasakang Pilipino."
+    explanation: "Itinatag ito upang mapaunlad ang produktong pang-agrikultura at matulungan ang mga magsasaka sa pamamagitan ng isang kooperatiba."
   },
   {
     id: 61,
@@ -578,7 +570,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino sa mga sumusunod na paring Heswita ang nagbigay kay Rizal ng rebulto ng Sagradong Puso ni Hesus sa araw ng kanyang kamatayan?",
     options: ["Padre Federico Faura", "Padre Jose Villaclara", "Padre Vicente Balaguer", "Padre Luis Visa"],
     answer: "Padre Luis Visa",
-    explanation: "Inalok sa kanya ang rebultong ito, na kanya namang inukit mula sa kahoy noong siya'y estudyante pa sa Ateneo."
+    explanation: "Hinugot ni Padre Visa ang naturang imahen sa kanyang bulsa at ibinigay kay Rizal noong huling araw niya."
   },
   {
     id: 70,
@@ -588,15 +580,14 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     answer: "Itinapon sa gilid ng selda para sa mga daga",
     explanation: "Sabi niya kay Andrade, hayaan din mag-piyesta ang 'mga kaawa-awang daga' bago siya tuluyang mamatay."
   },
-
-  // --- BATCH 3 (71-100 originally labeled 1-30) ---
+  // --- BATCH 4 (71-100) ---
   {
     id: 71,
     topic: "Dapitan at Huling Araw",
     question: "Anong samahang sekular mula sa Espanya ang tumanggal at namahala sa paglilibing sa bangkay ni Rizal matapos ang eksekusyon?",
     options: ["Cuerpo de Vigilancia", "Hermandad de la Paz y Caridad", "La Liga Filipina", "Katipunan"],
     answer: "Hermandad de la Paz y Caridad",
-    explanation: "Ang samahang ito ang tanging naatasang mag-ayos ng mga bangkay na hinatulan ng kamatayan."
+    explanation: "Ito ay isang samahang sekular mula sa Espanya na ang tungkulin ay umalalay sa mga bilanggong nahatulan ng kamatayan at mamahala sa kanilang paglilibing."
   },
   {
     id: 72,
@@ -628,7 +619,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Sino sa GOMBURZA ang malisyosong inakusahan dahil lamang sa kanyang simpleng hilig sa paglalaro ng poker at pagtaya sa sabong?",
     options: ["Padre Jose Burgos", "Padre Mariano Gomes", "Padre Jacinto Zamora", "Padre Pedro Pelaez"],
     answer: "Padre Jacinto Zamora",
-    explanation: "Ginamit ang mga biro niya sa pagsusugal (poker/sabong) bilang gawa-gawang 'ebidensya' upang sabihing may pakana siyang pag-aalsa (pulbura)."
+    explanation: "Ginamit ang kanyang simpleng hilig sa paglalaro ng poker at pagtaya sa sabong bilang gawa-gawang ebidensya laban sa kanya."
   },
   {
     id: 76,
@@ -636,7 +627,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     question: "Magkano ang biglaang itinaas ng presyo ng mga natirang sipi ng Edisyong Genta ng El Filibusterismo matapos itong makumpiska ng mga awtoridad?",
     options: ["100 pesetas", "200 pesetas", "300 pesetas", "400 pesetas"],
     answer: "400 pesetas",
-    explanation: "Dahil naging bihirang makita matapos sunugin ang marami sa mga kahon nito, lumobo sa 400 pesetas ang halaga ng isang sipi."
+    explanation: "Dahil ang karamihan sa mga sipi ay natuklasan at nakumpiska ng mga awtoridad, naging napakabihira nito at umabot sa 400 pesetas ang presyo."
   },
   {
     id: 77,
@@ -657,10 +648,10 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
   {
     id: 79,
     topic: "Paglalakbay sa Asya at Amerika",
-    question: "Saang eksaktong lokasyon sa Hong Kong nagbukas ng sariling klinika si Rizal?",
-    options: ["Blg. 5 Kalye D' Aguilar", "Blg. 2 Rednaxela Terrace", "Rue Maubeuge", "Kalye Ylaya"],
-    answer: "Blg. 2 Rednaxela Terrace",
-    explanation: "Dito matagumpay siyang nanggamot ng mga Pilipino at dayuhan sa Hong Kong."
+    question: "Sino ang bayaw ni Rizal na nagpadala ng balita sa kanya sa Hong Kong tungkol sa malupit na deportasyon ng 25 katao sa Calamba?",
+    options: ["Manuel T. Hidalgo", "Silvestre Ubaldo", "Mariano Herbosa", "Antonino Lopez"],
+    answer: "Manuel T. Hidalgo",
+    explanation: "Nakatanggap si Rizal ng liham mula kay Manuel T. Hidalgo noong Disyembre 1, 1891 tungkol sa kalupitan ni Weyler."
   },
   {
     id: 80,
@@ -697,10 +688,10 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
   {
     id: 84,
     topic: "Pangalawang Paglalakbay sa Europa",
-    question: "Magkano ang ibinabayad ni Rizal bilang buwanang upa sa bahay ng pamilya Beckett sa London?",
-    options: ["10 shillings", "25 shillings", "45 shillings (o 2 pounds)", "60 shillings"],
-    answer: "45 shillings (o 2 pounds)",
-    explanation: "Nagbayad siya ng ganyang halaga habang masidhi siyang nagsasaliksik sa aklatan ng British Museum."
+    question: "Magkano ang ibinabayad ni Rizal bilang buwanang upa sa bahay ng pamilyang Becket sa London?",
+    options: ["45 o 8 (British pounds)", "10 o 5 (British pounds)", "20 o 10 (British pounds)", "50 o 12 (British pounds)"],
+    answer: "45 o 8 (British pounds)",
+    explanation: "Ayon sa ulat, ang buwanang upa ni Rizal ay '45 o 8 (British pounds)' sa tahanan ng pamilya Becket."
   },
   {
     id: 85,
@@ -793,10 +784,10 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
   {
     id: 96,
     topic: "Mga Sanaysay at Anotasyon",
-    question: "Sa anong mga bayan itinayo ang mga paaralan at pagamutan gamit ang buwis at sapilitang paggawa ng mga mamamayan ngunit ginamit bilang kuwartel ng mga sundalo, ayon sa sanaysay ni Rizal?",
-    options: ["Malolos at San Fernando", "Calamba at Los Baños", "Vigan at Laoag", "Bacoor at Imus"],
-    answer: "Calamba at Los Baños",
-    explanation: "Ibinunyag ito ni Rizal bilang halimbawa ng panloloko: humingi ng buwis at trabaho para sa pampublikong gusali, ngunit mga sundalong kastila ang nakinabang."
+    question: "Ayon sa sanaysay ni Rizal, sa anong bayan itinayo ang dalawang paaralan gamit ang gastos ng mga mamamayan ngunit ginamit bilang kuwartel at tribunal ng mga sundalo?",
+    options: ["Calamba", "Los Baños", "Vigan", "Malolos"],
+    answer: "Calamba",
+    explanation: "Sa Calamba ay ginamit ang mga paaralan bilang kuwartel at tribunal, habang sa Los Baños naman ay ipinagawa ang pagamutan sa pamamagitan ng sapilitang paggawa."
   },
   {
     id: 97,
@@ -817,10 +808,10 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
   {
     id: 99,
     topic: "Dapitan at Huling Araw",
-    question: "Bukod sa kamatayan sa pamamagitan ng pagbaril, magkano ang ipinataw na parusang pinansyal na dapat bayaran ni Rizal sa pamahalaan para sa mga pinsala ayon sa kanyang hatol?",
+    question: "Bukod sa kamatayan sa pamamagitan ng pagbaril, magkano ang ipinataw na parusang pinansyal na dapat bayaran ni Rizal sa pamahalaan para sa mga pinsala ayon sa kanyang hatol kung bibigyan ng kapatawaran?",
     options: ["P10,000", "P50,000", "P100,000", "P500,000"],
     answer: "P100,000",
-    explanation: "Kina-confiscate din ang mga pribadong ari-arian ng bayani upang makabayad sa sapilitang danyos na isang daang libong piso."
+    explanation: "Kung sakaling pagkalooban siya ng kapatawaran, magbabayad siya ng P100,000 para sa mga pinsala. Hiwalay pa ito sa naunang utos na pangangamkam ng ari-arian na hindi bababa sa isang milyong piso."
   },
   {
     id: 100,
@@ -838,11 +829,11 @@ export interface IdentificationQuestion {
   answer: string;
 }
 export const identificationQuestions: IdentificationQuestion[] = [
-  { question: "Ano ang apelyidong ginamit ng pamilya ni Jose Rizal?", answer: "Rizal" },
-  { question: "Sino ang ina ni Jose Rizal?", answer: "Teodora Alonso" },
-  { question: "Ano ang pamagat ng unang nobela ni Rizal?", answer: "Noli Me Tangere" },
-  { question: "Sino ang kaibigang Austrian ni Rizal na nakatanggap ng maraming liham mula sa kanya?", answer: "Ferdinand Blumentritt" },
-  { question: "Ano ang pamagat ng ikalawang nobela ni Rizal?", answer: "El Filibusterismo" },
+  { question: "Sino ang nakasama ni Rizal sa inuupahang kwarto sa Genta na kahati niya sa rasyon ng biskwit upang makatipid?", answer: "Jose Alejandro" },
+  { question: "Ano ang sagisag-panulat (pen name) na ginamit ni Rizal nang ilathala niya ang satirikong akdang 'Por Telefono'?", answer: "Dimas Alang" },
+  { question: "Sino ang orihinal na may-akda ng aklat na 'Sucesos de las Islas Filipinas' na nilagyan ni Rizal ng sariling anotasyon?", answer: "Antonio de Morga" },
+  { question: "Anong samahang sekular mula sa Espanya ang tumanggal at namahala sa paglilibing sa bangkay ni Rizal matapos ang eksekusyon?", answer: "Hermandad de la Paz y Caridad" },
+  { question: "Sinong Gobernador-Heneral ang nagpadala ng 50 sundalo upang sunugin ang mga bahay at palayasin ang pamilya ni Rizal sa Calamba?", answer: "Valeriano Weyler" },
 ];
 
 // --- ENUMERATION QUESTIONS ---
@@ -858,14 +849,20 @@ export const enumerationQuestions: EnumerationQuestion[] = [
     answers: ["Mariano Gomez", "Jose Burgos", "Jacinto Zamora"],
   },
   {
-    question: "Ibigay ang dalawang nobela ni Jose Rizal.",
-    requiredCount: 2,
-    answers: ["Noli Me Tangere", "El Filibusterismo"],
+    question: "Magbigay ng tatlong ispesimen ng hayop na natuklasan ni Rizal sa Dapitan at ipinangalan sa kanya.",
+    requiredCount: 3,
+    answers: ["Draco rizali", "Rhacophorus rizali", "Apogonia rizali"],
   },
   {
-    question: "Magbigay ng tatlong layunin ng La Liga Filipina.",
+    question: "Magbigay ng tatlong layunin ng La Liga Filipina batay sa saligang-batas nito.",
     requiredCount: 3,
-    answers: ["Pagkakaisa ng kapuluan", "Pagtutulungan at pagtatanggol sa isa't isa", "Pagsusulong ng edukasyon, agrikultura, at kalakalan"],
+    answers: [
+      "Pag-isahin ang buong Pilipinas", 
+      "Pagtataguyod ng mga reporma", 
+      "Pagbibigay suporta sa edukasyon, agrikultura, at komersyo",
+      "Paglaban sa karahasan at kawalang-katarungan",
+      "Pagbibigay proteksyon at tulong sa bawat kasapi ng samahan"
+    ],
   },
 ];
 
@@ -875,11 +872,11 @@ export interface FlashcardQuestion {
   back: string;
 }
 export const flashcardQuestions: FlashcardQuestion[] = [
-  { front: "Kailan ipinanganak si Jose Rizal?", back: "Hunyo 19, 1861" },
-  { front: "Saan ipinanganak si Jose Rizal?", back: "Calamba, Laguna" },
-  { front: "Ano ang buong pamagat ng Noli Me Tangere?", back: "Noli Me Tangere (Huwag Mo Akong Salingin)" },
-  { front: "Sino ang nagpondo sa pagpapalimbag ng El Filibusterismo?", back: "Valentin Ventura" },
-  { front: "Saan ipinatapon si Rizal noong 1892?", back: "Dapitan" },
+  { front: "Ano ang ibig sabihin ng 'Eminencia Negro' sa El Filibusterismo?", back: "Isang idyoma para sa taong may malakas ngunit palihim na kapangyarihan; taguri kay Simoun." },
+  { front: "Ano ang pamagat ng satirikong akda ni Rizal na tumutuligsa kay Fr. Salvador Font?", back: "Por Telefono" },
+  { front: "Ano ang ibig sabihin ng 'Ablativo'?", back: "Kaukulang pambalarila na ginamit ni Rizal sa salitang 'status'." },
+  { front: "Saan ipinatapon si Rizal noong Hulyo 1892?", back: "Dapitan" },
+  { front: "Sino ang nagpadala ng pondo upang mailimbag ang El Filibusterismo?", back: "Valentin Ventura" },
 ];
 
 // --- MATCHING QUESTIONS ---
@@ -889,11 +886,11 @@ export interface MatchingQuestion {
   right: string;
 }
 export const matchingQuestions: MatchingQuestion[] = [
-  { id: "1", left: "Noli Me Tangere", right: "Unang nobela ni Rizal" },
-  { id: "2", left: "El Filibusterismo", right: "Ikalawang nobela ni Rizal" },
-  { id: "3", left: "Mi Ultimo Adios", right: "Huling tula ni Rizal" },
-  { id: "4", left: "Dapitan", right: "Lugar ng pagkakatapon kay Rizal" },
-  { id: "5", left: "Valentin Ventura", right: "Tumulong magpondo sa El Filibusterismo" },
+  { id: "1", left: "Verdades Nuevas", right: "Mga Bagong Katotohanan" },
+  { id: "2", left: "Sobre la Indolencia de los Filipinos", right: "Ang Katamaran ng mga Pilipino" },
+  { id: "3", left: "Filipinas Dentro de Cien Años", right: "Ang Pilipinas sa Darating na Sandaang Taon" },
+  { id: "4", left: "Por Telefono", right: "Sa Pamamagitan ng Telepono" },
+  { id: "5", left: "Diferencias", right: "Mga Pagkakaiba" },
 ];
 
 // --- RECITATION QUESTIONS ---
@@ -903,27 +900,26 @@ export interface RecitationQuestion {
 }
 export const recitationQuestions: RecitationQuestion[] = [
   {
-    question: "Bakit mahalaga ang Noli Me Tangere sa kasaysayan ng Pilipinas?",
+    question: "Paano naging isang ganap na 'Filibustero' si Simoun mula sa pagiging Juan Crisostomo Ibarra?",
     keyPoints: [
-      "Inilantad nito ang mga suliranin at pang-aabuso sa lipunan noong panahon ng mga Espanyol.",
-      "Gumising ito ng damdaming makabayan at paghahangad ng pagbabago.",
-      "Inialay ito ni Rizal sa kanyang bayan.",
+      "Bumalik siya sa Pilipinas na may hangaring makapaghiganti.",
+      "Ginamit niya ang yaman upang palalain ang kabulukan ng pamahalaan.",
+      "Nais niyang magpasimula ng madugong himagsikan.",
     ],
   },
   {
     question: "Ano ang mahahalagang ambag ni Rizal sa Dapitan?",
     keyPoints: [
-      "Nagturo siya sa mga kabataan.",
-      "Tumulong siya sa mga gawaing pangkalusugan at pangkomunidad.",
-      "Nagsagawa siya ng mga proyektong pang-imprastraktura at pangkabuhayan.",
+      "Nagtayo siya ng paaralan at pumili ng mga batang lalaki bilang mag-aaral.",
+      "Gumamit ng kaalaman sa inhenyeriya para sa gravity waterworks.",
+      "Nangolekta ng mga ispesimen at nagpadala sa mga museo sa Europa.",
     ],
   },
   {
-    question: "Ano ang pangunahing mensahe ng Mi Ultimo Adios?",
+    question: "Bakit hindi nangangahulugan ng kawalan ng utang na loob ang pagpuna sa pamahalaan ayon sa Ingratitudes?",
     keyPoints: [
-      "Pagmamahal at sakripisyo para sa bayan.",
-      "Pagtanggap sa kamatayan alang-alang sa kalayaan.",
-      "Pag-asa para sa kinabukasan ng mga Pilipino.",
+      "Hindi dapat manaig ang interes ng isang relihiyosong grupo kaysa sa interes ng bayan.",
+      "Ang pagtanaw ng utang na loob ay hindi nangangahulugan ng pagtanggap sa kamangmangan.",
     ],
   },
 ];
