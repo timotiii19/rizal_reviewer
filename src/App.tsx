@@ -5,14 +5,21 @@ import Identification from './components/Identification';
 import Enumeration from './components/Enumeration';
 import MatchingType from './components/MatchingType';
 import Recitation from './components/Recitation';
-import { multipleChoiceQuestions, Topic } from './data/questions';
+import { 
+  multipleChoiceQuestions, 
+  identificationQuestions, 
+  flashcardQuestions, 
+  matchingQuestions, 
+  enumerationQuestions, 
+  recitationQuestions, 
+  Topic 
+} from './data/questions';
 
 type Tab = 'identification' | 'multiple-choice' | 'matching' | 'enumeration' | 'flashcards' | 'recitation';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<Tab>('multiple-choice');
   const [activeTopic, setActiveTopic] = useState<Topic | "Lahat ng Paksa">('Lahat ng Paksa');
-  
   const [shuffle, setShuffle] = useState(true);
   
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,16 +27,32 @@ export default function App() {
   const [score, setScore] = useState(0);
   const [totalAnswered, setTotalAnswered] = useState(0);
 
-  // Awtomatikong kinukuha ang mga eksaktong paksa na mayroon lamang laman sa iyong data file
   const availableTopics = useMemo(() => {
     const topicsSet = new Set<string>();
     multipleChoiceQuestions.forEach(q => topicsSet.add(q.topic));
     return ["Lahat ng Paksa", ...Array.from(topicsSet)] as string[];
   }, []);
 
-  const currentTotalQuestions = activeTopic === "Lahat ng Paksa" 
-    ? multipleChoiceQuestions.length 
-    : multipleChoiceQuestions.filter(q => q.topic === activeTopic).length;
+  const currentTotalQuestions = useMemo(() => {
+    switch (activeTab) {
+      case 'multiple-choice':
+        return activeTopic === "Lahat ng Paksa" 
+          ? multipleChoiceQuestions.length 
+          : multipleChoiceQuestions.filter(q => q.topic === activeTopic).length;
+      case 'identification':
+        return identificationQuestions.length;
+      case 'matching':
+        return matchingQuestions.length;
+      case 'enumeration':
+        return enumerationQuestions.length;
+      case 'flashcards':
+        return flashcardQuestions.length;
+      case 'recitation':
+        return recitationQuestions.length;
+      default:
+        return 0;
+    }
+  }, [activeTab, activeTopic]);
 
   const scorePercentage = totalAnswered > 0 ? Math.round((score / totalAnswered) * 100) : 0;
 
