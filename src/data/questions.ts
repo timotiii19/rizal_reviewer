@@ -585,7 +585,7 @@ export const multipleChoiceQuestions: MultipleChoiceQuestion[] = [
     topic: "El Filibusterismo",
     question: "Sino ang paring martir na nagtaguyod sa karapatan ng mga paring sekular?",
     options: ["Padre Jose Burgos", "Padre Mariano Gomez", "Padre Jacinto Zamora", "Padre Pedro Pelaez"],
-    answer: "Padre Burgos",
+    answer: "Padre Jose Burgos",
     explanation: "Si Padre Jose Burgos ang nagtaguyod sa mga paring sekular."
   },
   {
