@@ -8,9 +8,10 @@ interface MultipleChoiceProps {
   currentIndex: number;
   setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
   onAnswer: (isCorrect: boolean) => void;
+  onComplete: () => void;
 }
 
-export default function MultipleChoice({ activeTopic, shuffle, currentIndex, setCurrentIndex, onAnswer }: MultipleChoiceProps) {
+export default function MultipleChoice({ activeTopic, shuffle, currentIndex, setCurrentIndex, onAnswer, onComplete }: MultipleChoiceProps) {
   const filteredQuestions = useMemo(() => {
     const questions = activeTopic === "Lahat ng Paksa"
       ? multipleChoiceQuestions
@@ -50,7 +51,12 @@ export default function MultipleChoice({ activeTopic, shuffle, currentIndex, set
 
   const handleNext = () => {
     setSelectedAnswer(null);
-    setCurrentIndex((prev) => (prev + 1) % filteredQuestions.length);
+    if (currentIndex === filteredQuestions.length - 1) {
+      onComplete();
+      return;
+    }
+
+    setCurrentIndex((prev) => prev + 1);
   };
 
   // Keyboard shortcut listener para sa Enter key

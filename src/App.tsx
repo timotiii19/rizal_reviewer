@@ -73,6 +73,13 @@ export default function App() {
     }
   };
 
+  const handleQuizComplete = () => {
+    setCurrentIndex(0);
+    setScore(0);
+    setStreak(0);
+    setTotalAnswered(0);
+  };
+
   const tabs: { id: Tab; label: string; icon: string }[] = [
     { id: 'identification', label: 'Identification', icon: '✏️' },
     { id: 'multiple-choice', label: 'Multiple Choice', icon: '🔘' },
@@ -91,6 +98,7 @@ export default function App() {
             currentIndex={currentIndex}
             setCurrentIndex={setCurrentIndex}
             onAnswer={handleAnswer}
+            onComplete={handleQuizComplete}
             shuffle={shuffle}
           />
         );
