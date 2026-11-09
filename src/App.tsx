@@ -134,7 +134,7 @@ export default function App() {
             aria-pressed={shuffle}
             className={`px-3 py-1 rounded-lg transition-colors ${shuffle ? 'bg-blue-100 text-blue-700' : 'bg-gray-200 text-gray-600'}`}
           >
-            🔀 Shuffle: {shuffle ? 'Bukas' : 'Sarado'}
+            🔀 Shuffle Questions: {shuffle ? 'Bukas' : 'Sarado'}
           </button>
         </div>
       </div>

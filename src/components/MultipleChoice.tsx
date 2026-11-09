@@ -17,12 +17,7 @@ export default function MultipleChoice({ activeTopic, shuffle, currentIndex, set
       ? multipleChoiceQuestions
       : multipleChoiceQuestions.filter(q => q.topic === activeTopic);
 
-    return shuffle
-      ? shuffleItems(questions).map(question => ({
-          ...question,
-          options: shuffleItems(question.options),
-        }))
-      : questions;
+    return shuffle ? shuffleItems(questions) : questions;
   }, [activeTopic, shuffle]);
   
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -40,6 +35,10 @@ export default function MultipleChoice({ activeTopic, shuffle, currentIndex, set
   }
 
   const question = filteredQuestions[currentIndex % filteredQuestions.length];
+  const options = useMemo(
+    () => question ? shuffleItems(question.options) : [],
+    [question],
+  );
 
   const handleSelect = (option: string) => {
     if (selectedAnswer) return; // Prevent multiple clicks
@@ -78,7 +77,7 @@ export default function MultipleChoice({ activeTopic, shuffle, currentIndex, set
       <h2 className="text-xl md:text-2xl font-bold mb-4">{question.question}</h2>
       
       <div className="flex flex-col gap-2">
-        {question.options.map((option) => {
+        {options.map((option) => {
           const isSelected = selectedAnswer === option;
           const isCorrect = option === question.answer;
           let btnClass = "p-3 text-left rounded-lg border transition-colors ";

@@ -9,8 +9,8 @@ export default function MatchingType({ shuffle }: { shuffle: boolean }) {
   );
   
   const rightItems = useMemo(
-    () => shuffle ? shuffleItems(matchingQuestions) : matchingQuestions,
-    [shuffle],
+    () => shuffleItems(matchingQuestions),
+    [],
   );
 
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
