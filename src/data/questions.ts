@@ -1950,11 +1950,13 @@ export const flashcardQuestions: FlashcardQuestion[] = multipleChoiceQuestions.m
 // --- MATCHING QUESTIONS ---
 export interface MatchingQuestion {
   id: string;
+  topic: Topic;
   left: string;
   right: string;
 }
 export const matchingQuestions: MatchingQuestion[] = multipleChoiceQuestions.map((q, index) => ({
   id: String(index + 1),
+  topic: q.topic,
   left: q.question,
   right: q.answer
 }));
