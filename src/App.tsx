@@ -139,16 +139,20 @@ export default function App() {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div className={`max-w-5xl mx-auto grid grid-cols-1 ${activeTab === 'enumeration' ? '' : 'md:grid-cols-3'} gap-4 mb-8`}>
         <div className="bg-surface p-4 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 flex justify-center items-center text-lg font-bold">
           Tanong {currentTotalQuestions > 0 ? currentIndex + 1 : 0} ng {currentTotalQuestions}
         </div>
-        <div className="bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 p-4 rounded-xl shadow-sm border border-orange-200 dark:border-orange-800 flex justify-center items-center text-lg font-bold transition-all">
-          🔥 Streak: {streak}
-        </div>
-        <div className="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 p-4 rounded-xl shadow-sm border border-green-200 dark:border-green-800 flex justify-center items-center text-lg font-bold transition-all">
-          Puntos: {score} / {totalAnswered} ({scorePercentage}%)
-        </div>
+        {activeTab !== 'enumeration' && (
+          <>
+            <div className="bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 p-4 rounded-xl shadow-sm border border-orange-200 dark:border-orange-800 flex justify-center items-center text-lg font-bold transition-all">
+              🔥 Streak: {streak}
+            </div>
+            <div className="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 p-4 rounded-xl shadow-sm border border-green-200 dark:border-green-800 flex justify-center items-center text-lg font-bold transition-all">
+              Puntos: {score} / {totalAnswered} ({scorePercentage}%)
+            </div>
+          </>
+        )}
       </div>
 
       <nav className="max-w-5xl mx-auto flex flex-wrap justify-center gap-3 mb-12">

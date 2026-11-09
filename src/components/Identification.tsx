@@ -30,7 +30,6 @@ export default function Identification({ shuffle }: { shuffle: boolean }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!input.trim()) return;
     setIsSubmitted(true);
   };
 
@@ -39,6 +38,21 @@ export default function Identification({ shuffle }: { shuffle: boolean }) {
     setIsSubmitted(false);
     setCurrentIndex((prev) => (prev + 1) % questions.length);
   };
+
+  useEffect(() => {
+    if (!isSubmitted) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Enter') return;
+      event.preventDefault();
+      setInput("");
+      setIsSubmitted(false);
+      setCurrentIndex((prev) => (prev + 1) % questions.length);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isSubmitted, questions.length]);
 
   return (
     <div className="w-full max-w-2xl mx-auto bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white">

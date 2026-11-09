@@ -38,6 +38,22 @@ export default function Enumeration({ shuffle }: { shuffle: boolean }) {
     setIsSubmitted(true);
   };
 
+  useEffect(() => {
+    if (!isSubmitted) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Enter') return;
+      event.preventDefault();
+      const nextIndex = (currentIndex + 1) % questions.length;
+      setCurrentIndex(nextIndex);
+      setIsSubmitted(false);
+      setInputs(Array(questions[nextIndex].requiredCount).fill(""));
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentIndex, isSubmitted, questions]);
+
   // Grade user inputs against expected answers (case-insensitive fuzzy/exact match check)
   const normalizedAnswers = question.answers.map(a => a.toLowerCase().trim());
   const correctCount = inputs.filter(val => {
