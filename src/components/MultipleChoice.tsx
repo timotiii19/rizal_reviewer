@@ -23,6 +23,7 @@ export default function MultipleChoice({ activeTopic, shuffle, currentIndex, set
         }))
       : questions;
   }, [activeTopic, shuffle]);
+  
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
   useEffect(() => {
@@ -44,13 +45,27 @@ export default function MultipleChoice({ activeTopic, shuffle, currentIndex, set
     setSelectedAnswer(option);
     
     const isCorrect = option === question.answer;
-    onAnswer(isCorrect); // I-update ang Score at Streak sa App.tsx
+    onAnswer(isCorrect);
   };
 
   const handleNext = () => {
     setSelectedAnswer(null);
     setCurrentIndex((prev) => (prev + 1) % filteredQuestions.length);
   };
+
+  // Keyboard shortcut listener para sa Enter key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter' && selectedAnswer) {
+        handleNext();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedAnswer, filteredQuestions.length]);
 
   return (
     <div className="w-full max-w-2xl mx-auto bg-surface p-5 md:p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
@@ -97,8 +112,9 @@ export default function MultipleChoice({ activeTopic, shuffle, currentIndex, set
       )}
 
       {selectedAnswer && (
-        <div className="mt-4 flex justify-end">
-          <button onClick={handleNext} className="px-6 py-2 bg-primary text-white rounded-lg font-medium shadow-md hover:bg-blue-700 transition">
+        <div className="mt-4 flex justify-between items-center">
+          <span className="text-xs opacity-60 hidden sm:inline">Pindutin ang **Enter** para magpatuloy ➔</span>
+          <button onClick={handleNext} className="px-6 py-2 bg-primary text-white rounded-lg font-medium shadow-md hover:bg-blue-700 transition ml-auto">
             Next Question
           </button>
         </div>
